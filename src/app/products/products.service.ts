@@ -6,7 +6,7 @@ import { map } from 'rxjs/operators';
 import { Product } from './product.interface';
 
 import { ApiService } from '../core/api.service';
-
+import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: 'root',
 })
@@ -49,10 +49,8 @@ export class ProductsService extends ApiService {
         );
     }
 
-    const url = this.getUrl('bff', `products/${id}`);
-    return this.http
-      .get<{ product: Product }>(url)
-      .pipe(map((resp) => resp.product));
+    const url = `${environment.apiEndpoints.product}/products/${id}`;
+    return this.http.get<Product>(url);
   }
 
   getProducts(): Observable<Product[]> {
@@ -63,7 +61,7 @@ export class ProductsService extends ApiService {
       return this.http.get<Product[]>('/assets/products.json');
     }
 
-    const url = this.getUrl('bff', 'products');
+    const url = `${environment.apiEndpoints.product}/products`;
     return this.http.get<Product[]>(url);
   }
 
