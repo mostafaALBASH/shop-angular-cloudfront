@@ -7,17 +7,17 @@ import { Config } from './config.interface';
 export const environment: Config = {
   production: false,
   apiEndpoints: {
-    product: 'https://xhdemvcqq4.execute-api.eu-west-1.amazonaws.com/dev',
-    order: 'https://xhdemvcqq4.execute-api.eu-west-1.amazonaws.com/dev',
-    import: 'https://xhdemvcqq4.execute-api.eu-west-1.amazonaws.com/dev',
-    bff: 'https://xhdemvcqq4.execute-api.eu-west-1.amazonaws.com/dev',
-    cart: 'https://xhdemvcqq4.execute-api.eu-west-1.amazonaws.com/dev',
+    product: 'https://je5hepu0y7.execute-api.us-east-1.amazonaws.com/dev',
+    order: 'https://je5hepu0y7.execute-api.us-east-1.amazonaws.com/dev',
+    import: 'https://je5hepu0y7.execute-api.us-east-1.amazonaws.com/dev',
+    bff: 'https://je5hepu0y7.execute-api.us-east-1.amazonaws.com/dev',
+    cart: 'https://je5hepu0y7.execute-api.us-east-1.amazonaws.com/dev',
   },
   apiEndpointsEnabled: {
     product: false,
     order: false,
     import: false,
-    bff: false,
+    bff: true,
     cart: false,
   },
 };
