@@ -22,5 +22,5 @@
 2. Create a pull request to the `master` branch.
 3. Submit the link to the pull request for crosscheck
 
-- `getProducts: `https://je5hepu0y7.execute-api.us-east-1.amazonaws.com/dev/products
-- `getProductById: `https://je5hepu0y7.execute-api.us-east-1.amazonaws.com/dev/products/7567ec4b-b10c-48c5-9345-fc73c48a80a2
+- `getProducts: `https://r4908u2gh5.execute-api.us-east-1.amazonaws.com/dev/products
+- `getProductById: `https://r4908u2gh5.execute-api.us-east-1.amazonaws.com/dev/products/7567ec4b-b10c-48c5-9345-fc73c48a80a2
